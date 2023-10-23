@@ -24,7 +24,7 @@ include_directories(src)
 include_directories(binary)
 
 # Přidejte zdrojový kód ke spustitelnému souboru tohoto projektu.
-add_executable (SimpleLoggingLibrary "binary/SimpleLoggingLibrary.cpp" "src/SimpleLoggingLibrary.h")
+add_executable (SimpleLoggingLibrary "binary/main.cpp" "src/Library.h" "binary/Library.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET SimpleLoggingLibrary PROPERTY CXX_STANDARD 20)
