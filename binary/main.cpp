@@ -1,10 +1,15 @@
 ﻿#include <iostream>
 #include "Library.h"
 
-using namespace std;
+
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	Logfile filelog("test.txt");
+
+	filelog.log(Level::ERROR, "Testovaci msg.");
+
+
+
 	return 0;
 }
